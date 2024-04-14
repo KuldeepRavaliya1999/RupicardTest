@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x: hidden;
 }
 
 .container {
@@ -26,7 +26,7 @@ body {
     left: 50%;
     min-width: 100%;
     min-height: 100%;
-    z-index: 0; /* Ensure video is behind content */
+    z-index: 0;
     transform: translate(-50%, -50%);
 }
 
@@ -36,7 +36,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header {
@@ -53,7 +53,7 @@ body {
 }
 
 .logo {
-    width: 50px; /* Adjust size as needed */
+    width: 50px;
 }
 
 .button {
@@ -63,18 +63,18 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition */
+    transition: background-color 0.3s;
 }
 
 .button:hover {
-    background-color: #0056b3; /* Change color on hover */
+    background-color: #13e8e8; /* Change color on hover */
 }
 
 .content {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     position: inherit;
     color: white;
     z-index: 1; /* Ensure content is above video */
@@ -83,8 +83,89 @@ body {
 .text {
     margin-bottom: 20px;
     text-align: center;
+    max-width: 40rem;
+}
+
+.margin-top-15{
+    margin-top: 15%;
 }
 
 .image {
     width: 300px; /* Adjust size as needed */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.form {
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+}
+
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.clear-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+}
+
+.checkbox-container {
+    margin-top: 10px;
+}
+
+.apply-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Show clear icon when input is not empty */
+input[type="tel"]:not(:empty) + .clear-icon {
+    display: block;
+}
+
+.detail-sub-container{
+    display: flex;
+}
+
+.detail-container{
+    margin: 0 15%;
+}
+
+.footer {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #f0f0f0;
+}
+
+.footer-form{
+    display: flex;
+    justify-content: space-evenly;
 }

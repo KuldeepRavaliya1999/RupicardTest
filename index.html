@@ -7,18 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+   <div>   
     <div class="container">
         <div class="overlay"></div>
         <header class="header">
-        <img src="assets/logo.png" alt="Logo" class="logo">
-        <button class="button">Button</button>
+            <h1 >UNI</h1>
+        <button class="button">Uni Paycheck</button>
         </header>
         <div class="content">
             <div class="text">
-                <h1><b>NX Wave.</b> The next-gen credit card for those who love rewards.</h1>
+                <h1 class="margin-top-15"><b>NX Wave.</b> The next-gen credit card for those who love rewards.</h1>
                 <p>1% Cashback + 5x Rewards + Zero Forex Markup.</p>
+                <form class="form">
+                    <div class="input-container">
+                        <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+                        <span class="clear-icon">&times;</span>
+                        <button type="submit" class="apply-button" id="apply-button" disabled>Apply Now</button>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="agree" name="agree" onchange="toggleApplyButton()">
+                        <label for="agree">I agree to the terms and conditions</label>
+                    </div>
+                </form>
             </div>
-            <img src="assets/uniCardImage.png" alt="Image" class="image">
+            <img src="assets/uniCardImage.png" alt="Image" class="image margin-top-15">
         </div>
         <div class="video-container">
             <video autoplay muted loop class="video">
@@ -27,5 +39,59 @@
             </video>
         </div>
     </div>
+    <div class="detail-container">
+       <div class="margin-top-15"><h1 >
+            Earn 1% assured cashback on your spends. Get 5X
+
+            more value than cashback at the Uni Store. Enjoy
+            
+            round the clock Whatsapp support. And it's
+            
+            lifetime free; no joining fee, no annual charges.
+        </h1></div> 
+        <div class="detail-sub-container margin-top-15">
+        <div> <h1 >
+            1% assured cashback on your spends.The more you spend, the more you earn.
+        </h1>
+        <div>Not applicable on fuel purchase, rent & wallet transfers, ATM withdrawals & international transactions.</div>
+    </div>
+        <img src="assets/uniCardImage.png" alt="Image" class="image">
+
+    </div> 
+    <div class="detail-sub-container margin-top-15">
+       
+        <img src="assets/uniCardImage.png" alt="Image" class="image">
+        <div> <h1 >
+            1% assured cashback on your spends.The more you spend, the more you earn.
+        </h1>
+        <div>Not applicable on fuel purchase, rent & wallet transfers, ATM withdrawals & international transactions.</div>
+    </div>
+
+    </div> 
+    <div class="detail-sub-container margin-top-15">
+        <div> <h1 >
+            1% assured cashback on your spends.The more you spend, the more you earn.
+        </h1>
+        <div>Not applicable on fuel purchase, rent & wallet transfers, ATM withdrawals & international transactions.</div>
+    </div>
+        <img src="assets/uniCardImage.png" alt="Image" class="image">
+
+    </div> 
+    </div>
+</div> 
+<footer class="footer">
+    <form class="footer-form">
+        <div class="input-container">
+            <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+            <span class="clear-icon">&times;</span>
+            <button type="submit" class="apply-button" id="apply-button" disabled>Apply Now</button>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="agree" name="agree" onchange="toggleApplyButton()">
+            <label for="agree">I agree to the terms and conditions</label>
+        </div>
+    </form>
+</footer>
+    <script src="script.js"></script>
 </body>
 </html>
